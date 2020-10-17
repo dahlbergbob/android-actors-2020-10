@@ -11,6 +11,7 @@ import se.accepted.watcher.State
 class LogActor : Actor() {
 
     override suspend fun act(message: Message) {
-        val tag = if(message is State) "<<" else ">>"
+        val tag = if (message is State) "<<" else ">>"
         Log.i(tag, message.toString())
     }
+}
