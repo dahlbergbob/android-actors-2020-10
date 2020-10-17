@@ -37,6 +37,9 @@ proguard/
 captures/
 
 # IntelliJ
+# removing all idea files for sample code
+.idea/
+# standard
 *.iml
 .idea/workspace.xml
 .idea/tasks.xml
