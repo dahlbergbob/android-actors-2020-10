@@ -5,6 +5,7 @@ This is a working android app showing sample code from a presentation I held at 
 
 - Link here https://devfest.se/schedule/2020-10-16?sessionId=205
 - Link to presentation https://speakerdeck.com/bobdahlberg/o-di
+- link to the article https://bob-dahlberg.medium.com/android-w-o-di-ff8030ece993
 
 ## Concept of the Actor architecture
 
