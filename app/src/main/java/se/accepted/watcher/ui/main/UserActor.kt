@@ -1,7 +1,7 @@
 package se.accepted.watcher.ui.main
 
-import com.github.michaelbull.result.*
-import kotlinx.coroutines.ExperimentalCoroutinesApi
+import com.github.michaelbull.result.getError
+import com.github.michaelbull.result.onSuccess
 import kotlinx.coroutines.ObsoleteCoroutinesApi
 import se.accepted.watcher.Message
 import se.accepted.watcher.State
@@ -18,7 +18,6 @@ data class User(val username: String, val token: String) {
 
 
 @ObsoleteCoroutinesApi
-@ExperimentalCoroutinesApi
 class UserActor(private val api: Api) : Actor() {
 
     private var user: User = User.EMPTY

@@ -8,7 +8,6 @@ import se.accepted.watcher.AppStream.messages
 import se.accepted.watcher.Message
 
 @ObsoleteCoroutinesApi
-@ExperimentalCoroutinesApi
 abstract class Actor {
 
     private val scope = CoroutineScope(Dispatchers.Default + Job())

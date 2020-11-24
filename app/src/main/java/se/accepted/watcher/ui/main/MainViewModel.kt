@@ -4,14 +4,11 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
-import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.*
 import se.accepted.watcher.AppStream.send
 import se.accepted.watcher.AppStream.states
 
-@ExperimentalCoroutinesApi
 class MainViewModel : ViewModel() {
-
 
     private val userFlow: Flow<UserState> = flow {
         emitAll(states.filterIsInstance())
